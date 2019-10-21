@@ -1,34 +1,23 @@
-<ion-content>
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <ion-header>
-          <ion-toolbar>
-            <ion-title>MyParis</ion-title>
-          </ion-toolbar>
-        </ion-header>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col>
-        <ion-card>
-          <ion-card-content>
-            <ion-item>
-              <ion-label position="floating">Usuario</ion-label>
-              <ion-input type='text'></ion-input>
-            </ion-item>
-            <ion-item>
-              <ion-label position="floating">Contraseña</ion-label>
-              <ion-input type='password'></ion-input>
-            </ion-item>
-            <div margin-vertical text-center>
-              <ion-button (click)="logInButton()">
-                Ingresar
-              </ion-button>
-            </div>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+<ion-content color="none" class="bg-image">
+
+  <ion-card>
+    <div class="ion-text-center ion-card-title">
+      <h1>MyParis</h1>
+    </div>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Usuario</ion-label>
+        <ion-input type='text'></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input type='password'></ion-input>
+      </ion-item>
+      <div margin-vertical text-center>
+        <ion-button (click)="logInButton()">
+          Ingresar
+        </ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
