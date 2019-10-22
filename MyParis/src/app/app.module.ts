@@ -14,20 +14,31 @@ import { CategoriasComponent } from './components/categorias/categorias.componen
 import { MapaComponent } from './components/mapa/mapa.component';
 import { AboutComponent } from './components/about/about.component';
 
+import { AgmCoreModule } from "@agm/core";
+import { Geolocation } from '@ionic-native/geolocation/ngx';
+
 @NgModule({
   declarations: [
-    AppComponent, 
-    Home2Component, 
+    AppComponent,
+    Home2Component,
     HomeComponent,
     CategoriasComponent,
     MapaComponent,
     AboutComponent
   ],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), IonicModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    IonicModule.forRoot(),
+    IonicModule,
+    AppRoutingModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyC_Hn7NNKWvrWrQX_mGktWxiDbacHuOeIM'
+    })],
   providers: [
     StatusBar,
     SplashScreen,
+    Geolocation,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
